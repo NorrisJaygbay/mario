@@ -8,6 +8,9 @@ function generateBlocks() {
         return;
     }
 
+    let delay = 0;
+    const delayIncrement = 0.1;  // Delay increment for each block
+
     for (let i = 1; i <= block_Number; i++) {
         const line = document.createElement('div');
         line.className = 'line';
@@ -17,6 +20,8 @@ function generateBlocks() {
         for (let j = 0; j < i; j++) {
             const block = document.createElement('div');
             block.className = 'block';
+            block.style.animationDelay = `${delay}s`;
+            delay += delayIncrement;
             leftBlocks.appendChild(block);
         }
 
@@ -25,6 +30,8 @@ function generateBlocks() {
         for (let j = 0; j < i; j++) {
             const block = document.createElement('div');
             block.className = 'block';
+            block.style.animationDelay = `${delay}s`;
+            delay += delayIncrement;
             rightBlocks.appendChild(block);
         }
 
