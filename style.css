@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    background: #0C0C0C;
+}
+.container {
+    width: 40%;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: auto;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #FFDB00;
+    padding: 20px;
+}
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+input{
+    width: 150px;
+    outline: none;
+    border: 1.5px solid #FFDB00;
+    border-radius: 5px;
+    color: #fff;
+    font-size: .8rem;
+    padding: 5px 10px;
+    background: transparent;
+}
+button{
+    background: #FFDB00;
+    color: #0C0C0C;
+    border: none;
+    border-radius: 5px;
+    font-size: .75rem;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+#container-for-Block{
+    margin-top: 20px;
+}
+.blocks {
+    display: flex;
+    justify-content: center;
+    margin: 2px 10px;
+}
+.line {
+    display: flex;
+    justify-content: center;
+}
+.block {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background: #FFDB00;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+
+@media all and (max-width:1314px){
+    .container {
+        width: 50%;
+    }
+}
+@media all and (max-width:1050px){
+    .container {
+        width: 60%;
+    }
+}
+@media all and (max-width:874px){
+    .container {
+        width: 70%;
+    }
+}
+@media all and (max-width:746px){
+    .container {
+        width: 80%;
+    }
+}
+@media all and (max-width:654px){
+    .container {
+        width: 95%;
+    }
+}
+@media all and (max-width:550px){
+    .block {
+        width: 15px;
+        height: 15px;
+    }
+}
+@media all and (max-width:466px){
+    .block {
+        width: 10px;
+        height: 10px;
+    }
+}
+@media all and (max-width:374px){
+    .block {
+        margin-left: 5px;
+        margin-bottom: 3px;
+    }
+  
+}
+@media all and (max-width:298px){
+    .block {
+        margin-left: 4px;
+    }
+    .blocks {
+        display: flex;
+        justify-content: center;
+        margin: 2px 7px;
+    }
+    input{
+        width: 100px;
+    }
+    .container {
+        padding: 10px;
+    }
+  
+}
